@@ -2,6 +2,8 @@
 html, body {
 	overflow: hidden;
 	min-height: 100vh;
+	font-family: 'Limelight', cursive;
+	font-weight: 700;
 }
 
 body {
@@ -17,11 +19,17 @@ body {
 h1 {
 	font-size: 3em;
 	margin-bottom: -5px;
+	background-color: #080714;
+	opacity: .8;
+	border-radius: 10px;
+	text-decoration: underline;
 }
 
 h2 {
-	font-size: 1.2em;
+	font-size: 1.3em;
 	margin-bottom: 10px;
+	background-color: #080714;
+	opacity: .8;
 }
 
 li {
@@ -52,12 +60,11 @@ li img {
 .list {
 	transition: all 2s ease-in;
 	transition: all 1s ease-out;
+	padding: 10px;
 }
 
 .list:hover {
 	transform: scale(1.2);
-	-webkit-animation: bounce 1s;
-    animation: bounce 1s;
 }
 
 #particles-js{
@@ -71,7 +78,7 @@ li img {
 	position: relative;
 	z-index: 1;
 	margin: 5% auto;
-	width: 300px;
+	width: 330px;
 	text-align: center;
 	cursor: default;
 }
