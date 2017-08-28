@@ -6,20 +6,29 @@
 		<title>Jacob Wylie | Developer</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/bulma.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 	</head>
 	<body>
 		<div id="particles-js"></div>
 		<div class="container-main">
-			<div class="main">
+
+			<div class="main animated fadeInDownBig">
 				<h1 id="heading">Jacob Wylie</h1>
-				<h2>(Click around)</h2>
-				<div class="columns is-mobile">
+				<h2>(Click in space for more stars)</h2>
+
+				<div class="columns portfolio-button">
+					<div class="column portfolio-button">
+						<a class="button is-outlined" onclick="portfolio()">Portfolio</a>
+					</div>
+				</div>
+
+				<div class="columns is-mobile links animated fadeInDownBig">
 					<ul class="column">
 						<div class="list">
 							<a href="https://github.com/jacobwylie">
 								<li><img src="img/github.png"></li>
-								<li>Portfolio</li>
+								<li>Github</li>
 							</a>
 						</div>
 						<div class="list">
@@ -55,11 +64,39 @@
 							</a>
 						</div>
 					</ul>
-				</div>
-			</div>
-		</div>
+				</div> <!-- /columns -->
+
+				<div class="portfolio is-hidden animated fadeInUpBig">
+					<div class="columns">
+						<div class="column">
+							<p>Project</p>
+						</div>
+						<div class="column">
+							<p>Project</p>
+						</div>
+						<div class="column">
+							<p>Project</p>
+						</div>
+					</div> <!-- /columns -->
+				</div> <!-- /portfolio -->
+
+			</div> <!-- /main -->
+
+		</div> <!-- /container-main -->
 
 		<script src="particles-js/particles.js"></script>
 		<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
