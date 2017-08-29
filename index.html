@@ -5,7 +5,7 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Jacob Wylie | Developer</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/bulma.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -14,19 +14,22 @@
 		<div id="particles-js"></div>
 		<div class="container-main">
 
+			<!-- HEADING -->
 			<div class="main animated zoomInDown">
 				<h1 id="heading">Jacob Wylie</h1>
 				<h2>Web Enthusiast</h2>
 
-				<div class="columns portfolio-button">
-					<div class="column portfolio-button">
-						<a class="button is-outlined" onclick="portfolio()">Portfolio</a>
-						<a class="button is-outlined" onclick="portfolio()">About Me</a>
-						<a class="button is-outlined" onclick="portfolio()">Contact</a>
+				<!-- BUTTONS -->
+				<div class="columns nav-button">
+					<div class="column nav-button">
+						<a class="button is-outlined online-btn"">Online</a>
+						<a class="button is-outlined portfolio-btn"">Portfolio</a>
+						<a class="button is-outlined contact-btn">Contact</a>
 					</div>
 				</div>
 
-				<div class="columns is-mobile links animated zoomIn">
+				<!-- ONLINE -->
+				<div class="columns is-mobile online animated zoomIn">
 					<ul class="column">
 						<div class="list">
 							<a href="https://github.com/jacobwylie">
@@ -38,12 +41,6 @@
 							<a href="#">
 								<li><img src="img/pdf.png"></li>
 								<li>Resume</li>
-							</a>
-						</div>
-						<div class="list">
-							<a href="mailto:jacobwylie@gmail.com">
-								<li><img src="img/email.png"></li>
-								<li>Email Me</li>
 							</a>
 						</div>
 					</ul>
@@ -58,23 +55,19 @@
 							<a href="https://twitter.com/JacobPWylie">
 								<li><img src="img/twitter.png"></li>
 								<li>Twitter</li>
-							</a>
-						</div>
-						<div class="list">
-							<a href="tel:+4915736238561">
-								<li><img src="img/phone.png"></li>
-								<li>Call Me</li>
-							</a>
-						</div>
+						</a>
+					</div>
 					</ul>
 				</div> <!-- /columns -->
 
+				<!-- HINT -->
 				<div class="columns hint animated zoomIn">
 					<div class="column">
 						<h2>Hint: Click Stars</h2>
 					</div>
 				</div>
 
+				<!--  PORTFOLIO -->
 				<div class="portfolio is-hidden animated zoomIn">
 					<div class="columns">
 						<div class="column">
@@ -88,6 +81,26 @@
 						</div>
 					</div> <!-- /columns -->
 				</div> <!-- /portfolio -->
+
+				<!-- CONTACT -->
+				<div class="columns is-mobile is-hidden contact animated zoomIn">
+					<div class="list column">
+						<a href="mailto:jacobwylie@gmail.com">
+							<ul>
+								<li><img src="img/email.png"></li>
+								<li>Email Me</li>
+							</ul>
+						</a>
+					</div>
+					<div class="list column contact">
+						<a href="tel:+4915736238561">
+						<ul>
+							<li><img src="img/phone.png"></li>
+							<li>Call Me</li>
+						</ul>
+						</a>
+					</div>
+				</div> <!-- /Contact -->
 
 			</div> <!-- /main -->
 

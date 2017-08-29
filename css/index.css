@@ -2,7 +2,7 @@
 html, body {
 	overflow: hidden;
 	height: 100vh;
-	font-family: 'Limelight', cursive;
+	font-family: 'Orbitron', sans-serif;
 	font-weight: 700;
 }
 
@@ -33,39 +33,18 @@ h2 {
 	border-radius: 10px;
 }
 
+ul.column {
+	margin-top: 5px;
+}
+
 li {
 	font-size: 1.2em;
 	color: white;
 }
 
 li img {
-	margin: 15px 0px -2px 0px;
+	margin: 15px 0px 2px 0px;
 	width: 40%;
-}
-
-.portfolio-button {
-	margin: 10px 0px -10px 0px;
-	padding: 0;
-}
-
-.portfolio-button a {
-	opacity: 1;
-	border: ;
-}
-
-.portfolio {
-	background-color: black;
-	margin: 50px 0 0 0;
-}
-
-.list {
-	transition: all 2s ease-in;
-	transition: all 1s ease-out;
-	padding: 10px;
-}
-
-.list:hover {
-	transform: scale(1.2);
 }
 
 #particles-js{
@@ -79,7 +58,7 @@ li img {
 	position: relative;
 	z-index: 1;
 	margin: 5% auto;
-	width: 320px;
+	width: 330px;
 	text-align: center;
 	cursor: default;
 }
@@ -92,6 +71,35 @@ li img {
 
 .is-hidden {
 	display: none;
+}
+
+.list {
+	transition: all 2s ease-in;
+	transition: all 1s ease-out;
+	padding: 10px;
+}
+
+.list:hover {
+	transform: scale(1.2);
+}
+
+.nav-button {
+	margin: 10px 0px 10px 0px;
+	padding: 0;
+}
+
+.nav-button a {
+	opacity: 1;
+	border: ;
+}
+
+.portfolio {
+	background-color: black;
+	margin: 50px 0 0 0;
+}
+
+.contact {
+
 }
 
 .hint {
@@ -110,6 +118,10 @@ li img {
 @media(max-width: 768px) {
 	html, body {
 		overflow: scroll;
+	}
+
+	.hint {
+		display: none;
 	}
 
 }
