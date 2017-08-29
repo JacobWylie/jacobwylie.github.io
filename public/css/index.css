@@ -118,7 +118,11 @@ input.input {
 }
 
 .contact-item li {
-	font-size: .81em;
+	font-size: .8em;
+}
+
+.submit-div {
+	text-align: center;
 }
 
 .hint {
@@ -161,12 +165,16 @@ input.input {
   background: #000;
   width: 250px;
   height: 300px;
-  line-height: 200px;
-  font-size: 5em;
-  text-align: center;
   color: #FFF;
-  opacity: 0.95;
+  opacity: 1;
   border-radius: 10px;
+  text-align: center;
+}
+
+.carousel-btn {
+	margin: 60% auto 0px auto;
+	max-width: 50px;
+	font-size: .7em;
 }
 
 .a {
