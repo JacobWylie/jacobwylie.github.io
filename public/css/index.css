@@ -2,7 +2,7 @@
 html, body {
 	overflow: hidden;
 	height: 100vh;
-	font-family: 'Limelight', cursive;
+	font-family: 'Orbitron', sans-serif;
 	font-weight: 700;
 }
 
@@ -20,7 +20,7 @@ h1 {
 	font-size: 3em;
 	margin-bottom: -5px;
 	background-color: #080714;
-	opacity: .8;
+	opacity: 1;
 	border-radius: 10px;
 	text-decoration: underline;
 }
@@ -29,8 +29,12 @@ h2 {
 	font-size: 1.3em;
 	margin-bottom: 10px;
 	background-color: #080714;
-	opacity: .8;
+	opacity: 1;
 	border-radius: 10px;
+}
+
+ul.column {
+	margin-top: 5px;
 }
 
 li {
@@ -39,22 +43,54 @@ li {
 }
 
 li img {
-	margin: 15px 0px -2px 0px;
+	margin: 15px 0px 2px 0px;
 	width: 40%;
 }
 
-.portfolio-button {
-	margin: 10px 0px -10px 0px;
+label.label {
+	color: #ffffff;
 }
 
-.portfolio-button a {
-	opacity: .8;
-	border: ;
+textarea.textarea,
+input.input {
+	font-size: .8em;
 }
 
-.portfolio {
-	background-color: black;
-	margin: 50px 0 0 0;
+#particles-js{
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+}
+
+#email {
+	padding: 7px;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(255,255,255,.2);
+    -moz-box-shadow:0px 0px 20px 1px rgba(255,255,255,.2);
+	box-shadow: 0px 0px 20px 1px rgba(126,153,236,.2);
+	border-radius: 10px;
+}
+
+.container-main {
+	position: relative;
+	z-index: 1;
+	margin: 5% auto;
+	width: 330px;
+	text-align: center;
+	cursor: default;
+}
+
+.main {
+	color: white;
+	border-radius: 10px;
+	padding: 0px;
+}
+
+.is-hidden {
+	display: none;
 }
 
 .list {
@@ -67,36 +103,50 @@ li img {
 	transform: scale(1.2);
 }
 
-#particles-js{
-    position:absolute;
-    top:0;
-    width:100%;
-    height:100%;
+.nav-button {
+	margin: 10px 0px 10px 0px;
+	padding: 0;
 }
 
-.container-main {
-	position: relative;
-	z-index: 1;
-	margin: 5% auto;
-	width: 300px;
-	text-align: center;
-	cursor: default;
-}
-
-.main {
+.nav-button a {
 	opacity: 1;
-	color: white;
-	border-radius: 10px;
-	padding: 0px;
+	border: ;
 }
 
-.is-hidden {
-	display: none;
+.portfolio {
+	background-color: black;
+	margin: 50px 0 0 0;
+}
+
+.contact-header {
+	margin: 30px 0;
+}
+
+.contact-item li {
+	font-size: .81em;
+}
+
+.hint {
+	margin: 0 auto;
+	width: 200px;
+
+}
+
+.hint div {
+	padding: 0;
+}
+
+.hint h2 {
+	margin: 0;
 }
 
 @media(max-width: 768px) {
 	html, body {
 		overflow: scroll;
+	}
+
+	.hint {
+		display: none;
 	}
 
 }

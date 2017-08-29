@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Jacob Wylie | Developer</title>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="/css/normalize.css">
 		<link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/bulma.css">
+		<link rel="stylesheet" type="text/css" href="/css/bulma.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="/css/index.css">
 	</head>
 	<body>
 		<div id="particles-js"></div>
@@ -33,13 +33,13 @@
 					<ul class="column">
 						<div class="list">
 							<a href="https://github.com/jacobwylie">
-								<li><img src="img/github.png"></li>
+								<li><img src="/img/github.png"></li>
 								<li class="">Github</li>
 							</a>
 						</div>
 						<div class="list">
 							<a href="#">
-								<li class=""><img src="img/pdf.png"></li>
+								<li class=""><img src="/img/pdf.png"></li>
 								<li class="">Resume</li>
 							</a>
 						</div>
@@ -47,13 +47,13 @@
 					<ul class="column">
 						<div class="list">
 							<a href="https://www.linkedin.com/in/jacob-wylie/">
-								<li><img src="img/linkedin.png"></li>
+								<li><img src="/img/linkedin.png"></li>
 								<li class="">LinkedIn</li>
 							</a>
 						</div>
 						<div class="list">
 							<a href="https://twitter.com/JacobPWylie">
-								<li><img src="img/twitter.png"></li>
+								<li><img src="/img/twitter.png"></li>
 								<li class="">Twitter</li>
 						</a>
 					</div>
@@ -85,34 +85,42 @@
 				<!-- CONTACT -->
 				<div class="is-mobile is-hidden contact animated zoomIn">
 					<h2 class="contact-header">Send Me a Message</h2>
-					<form class="columns">
-						<div class="field column">
-							<label class="label">Name</label>
-								<div class="control">
-									<input class="input" type="text" placeholder="Name">
-								</div>
-						</div>
-						<div class="field column">
-								<label class="label">Email</label>
-									<div class="control has-icons-left has-icons-right">
-										<input id="email-input" class="input" type="email" placeholder="Email">
+
+					<form action="/" method="POST" id="contactForm">
+						<div class="columns">
+							<div class="field column">
+								<label class="label">Name</label>
+									<div class="control">
+										<input id="name" name="name" class="input" type="text" placeholder="Name">
 									</div>
 							</div>
-					</form>
-					<div class="columns">
-						<div class="field column">
-							<label class="label">Message</label>
-								<div class="control">
-									<textarea class="textarea" placeholder="Write Here"></textarea>
-								</div>
+							<div class="field column">
+								<label class="label">Email</label>
+									<div class="control has-icons-left has-icons-right">
+										<input id="email" name="email" class="input" type="email" placeholder="Email">
+									</div>
+							</div>
 						</div>
-					</div>
+						<div class="columns">
+							<div class="field column">
+								<label class="label">Message</label>
+									<div class="control">
+										<textarea id="message" name="message" class="textarea" placeholder="Write Here"></textarea>
+									</div>
+							</div>
+						</div>
+						<div class="columns">
+							<div class="control column">
+	    						<button class="button">Submit</button>
+	  						</div>
+  						</div>
+					</form>
 
 					<div class="columns">
 						<div class="list column">
 							<a href="mailto:jacobwylie@gmail.com">
 							<ul class="contact-item">
-								<li><img src="img/email.png"></li>
+								<li><img src="/img/email.png"></li>
 								<li>jacobwylie@gmail.com</li>
 							</ul>
 							</a>
@@ -120,7 +128,7 @@
 						<div class="list column contact">
 							<a href="tel:+4915736238561">
 							<ul class="contact-item">
-								<li><img src="img/phone.png"></li>
+								<li><img src="/img/phone.png"></li>
 								<li>+4915736238561</li>
 							</ul>
 							</a>
@@ -132,8 +140,8 @@
 
 		</div> <!-- /container-main -->
 
-		<script src="particles-js/particles.js"></script>
-		<script type="text/javascript" src="app.js"></script>
+		<script src="/js/particles-js/particles.js"></script>
+		<script type="text/javascript" src="/js/script.js"></script>
 	</body>
 </html>
 

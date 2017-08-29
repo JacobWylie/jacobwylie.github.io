@@ -1,69 +1,57 @@
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'particles-js/particlesjs-config.json', function() {
-  console.log('callback - particles.js config loaded');
+const express    = require('express'),
+	  app        = express(),
+	  fs         = require('fs'),
+	  logger     = require("morgan"),
+	  nodemailer = require('nodemailer'),
+	  mg         = require('nodemailer-mailgun-transport'),
+	  bodyParser = require('body-parser'),
+	  nconf      = require('nconf'),
+	  auth       = require('./config.json');
+
+// Serve static js and css from /public
+app.use(express.static(__dirname + '/public'));
+// Body parser
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// ROOT Route
+app.get('/', (req, res) => res.sendFile(__dirname + '/index.html'));
+
+// http POST /contact
+app.post("/", (req, res) => {
+	let name = req.body.name;
+	let email = req.body.email;
+	let message = req.body.message;
+
+	// create transporter object capable of sending email using the default SMTP transport
+	const transporter = nodemailer.createTransport(mg(auth));
+
+	// setup e-mail data with unicode symbols
+	let mailOptions = {
+		from: email, // sender address
+		name: name,
+		to: 'jacobwylie@gmail.com', // list of receivers
+		subject: 'Message from Portfolio Contact page', // Subject line
+		text: message,
+	};
+	
+	// send mail with defined transport object
+	transporter.sendMail(mailOptions, (error, info) => {
+		if (error) {
+	  		console.log('\nERROR: ' + error+'\n');
+	  		
+		} else {
+	    	console.log('\nRESPONSE SENT: ' + info.response+'\n');
+	  		res.redirect('back');
+		}
+	});
 });
 
-const onlineBtn = document.querySelector('.online-btn');
-const portfolioBtn = document.querySelector('.portfolio-btn');
-const contactBtn = document.querySelector('.contact-btn');
-const onlineDiv = document.querySelector('.online');
-const portfolioDiv = document.querySelector('.portfolio');
-const contactDiv = document.querySelector('.contact');
-const hintDiv = document.querySelector('.hint');
-
-function showOnline() {
-    if (onlineDiv.classList.contains('is-hidden')) {
-        onlineDiv.classList.remove('is-hidden');
-    }
-    if (!portfolioDiv.classList.contains('is-hidden')) {
-        portfolioDiv.classList.add('is-hidden')
-    }
-    if (!contactDiv.classList.contains('is-hidden')) {
-        contactDiv.classList.add('is-hidden')
-    }
-    if (hintDiv.classList.contains('is-hidden')) {
-        hintDiv.classList.remove('is-hidden')
-    }
-}
-
-function showPortfolio() {
-    if (portfolioDiv.classList.contains('is-hidden')) {
-        portfolioDiv.classList.remove('is-hidden');
-    }
-    if (!onlineDiv.classList.contains('is-hidden')) {
-        onlineDiv.classList.add('is-hidden')
-    }
-    if (!contactDiv.classList.contains('is-hidden')) {
-        contactDiv.classList.add('is-hidden')
-    }
-    if (!hintDiv.classList.contains('is-hidden')) {
-        hintDiv.classList.add('is-hidden')
-    }
-}
-
-function showContact() {
-    if (contactDiv.classList.contains('is-hidden')) {
-        contactDiv.classList.remove('is-hidden');
-    }
-    if (!onlineDiv.classList.contains('is-hidden')) {
-        onlineDiv.classList.add('is-hidden')
-    }
-    if (!portfolioDiv.classList.contains('is-hidden')) {
-        portfolioDiv.classList.add('is-hidden')
-    }
-    if (!hintDiv.classList.contains('is-hidden')) {
-        hintDiv.classList.add('is-hidden')
-    }
-}
-
-
-onlineBtn.addEventListener('click', showOnline);
-portfolioBtn.addEventListener('click', showPortfolio);
-contactBtn.addEventListener('click', showContact);
-
-
-
-
+// Set which port your app will run on: PORT=<whichever port you like>
+// Connect to server specific port or 3000 if none specified
+const port = process.env.PORT || 3000
+app.listen(port, process.env.IP, () => {
+	console.log(`App is running on port: ${port}`);
+})
 
 
 
