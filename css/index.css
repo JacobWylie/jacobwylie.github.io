@@ -1,7 +1,7 @@
 /* Disable verticle scroll */
 html, body {
 	overflow: hidden;
-	min-height: 100vh;
+	height: 100vh;
 	font-family: 'Limelight', cursive;
 	font-weight: 700;
 }
@@ -20,7 +20,7 @@ h1 {
 	font-size: 3em;
 	margin-bottom: -5px;
 	background-color: #080714;
-	opacity: .8;
+	opacity: 1;
 	border-radius: 10px;
 	text-decoration: underline;
 }
@@ -29,7 +29,8 @@ h2 {
 	font-size: 1.3em;
 	margin-bottom: 10px;
 	background-color: #080714;
-	opacity: .8;
+	opacity: 1;
+	border-radius: 10px;
 }
 
 li {
@@ -44,15 +45,15 @@ li img {
 
 .portfolio-button {
 	margin: 10px 0px -10px 0px;
+	padding: 0;
 }
 
 .portfolio-button a {
-	opacity: .8;
+	opacity: 1;
 	border: ;
 }
 
 .portfolio {
-	min-width: 300px;
 	background-color: black;
 	margin: 50px 0 0 0;
 }
@@ -78,13 +79,12 @@ li img {
 	position: relative;
 	z-index: 1;
 	margin: 5% auto;
-	width: 330px;
+	width: 320px;
 	text-align: center;
 	cursor: default;
 }
 
 .main {
-	opacity: 1;
 	color: white;
 	border-radius: 10px;
 	padding: 0px;
@@ -94,10 +94,24 @@ li img {
 	display: none;
 }
 
+.hint {
+	margin: 0 auto;
+	width: 200px;
+}
+
+.hint div {
+	padding: 0;
+}
+
+.hint h2 {
+	margin: 0;
+}
+
 @media(max-width: 768px) {
 	html, body {
-	overflow: scroll;
+		overflow: scroll;
 	}
+
 }
 
 
