@@ -15,15 +15,15 @@
 		<div class="container-main">
 
 			<!-- HEADING -->
-			<div class="main animated zoomInDown">
-				<h1 id="heading">Jacob Wylie</h1>
-				<h2>Web Enthusiast</h2>
+			<div class="main animated zoomInDown shadow">
+				<h1 id="heading" class="">Jacob Wylie</h1>
+				<h2 class="">Web Enthusiast</h2>
 
 				<!-- BUTTONS -->
 				<div class="columns nav-button">
 					<div class="column nav-button">
-						<a class="button is-outlined online-btn"">Online</a>
-						<a class="button is-outlined portfolio-btn"">Portfolio</a>
+						<a class="button is-outlined online-btn">Online</a>
+						<a class="button is-outlined portfolio-btn">Portfolio</a>
 						<a class="button is-outlined contact-btn">Contact</a>
 					</div>
 				</div>
@@ -34,13 +34,13 @@
 						<div class="list">
 							<a href="https://github.com/jacobwylie">
 								<li><img src="img/github.png"></li>
-								<li>Github</li>
+								<li class="">Github</li>
 							</a>
 						</div>
 						<div class="list">
 							<a href="#">
-								<li><img src="img/pdf.png"></li>
-								<li>Resume</li>
+								<li class=""><img src="img/pdf.png"></li>
+								<li class="">Resume</li>
 							</a>
 						</div>
 					</ul>
@@ -48,13 +48,13 @@
 						<div class="list">
 							<a href="https://www.linkedin.com/in/jacob-wylie/">
 								<li><img src="img/linkedin.png"></li>
-								<li>LinkedIn</li>
+								<li class="">LinkedIn</li>
 							</a>
 						</div>
 						<div class="list">
 							<a href="https://twitter.com/JacobPWylie">
 								<li><img src="img/twitter.png"></li>
-								<li>Twitter</li>
+								<li class="">Twitter</li>
 						</a>
 					</div>
 					</ul>
@@ -83,22 +83,48 @@
 				</div> <!-- /portfolio -->
 
 				<!-- CONTACT -->
-				<div class="columns is-mobile is-hidden contact animated zoomIn">
-					<div class="list column">
-						<a href="mailto:jacobwylie@gmail.com">
-							<ul>
-								<li><img src="img/email.png"></li>
-								<li>Email Me</li>
-							</ul>
-						</a>
+				<div class="is-mobile is-hidden contact animated zoomIn">
+					<h2 class="contact-header">Send Me a Message</h2>
+					<form class="columns">
+						<div class="field column">
+							<label class="label">Name</label>
+								<div class="control">
+									<input class="input" type="text" placeholder="Name">
+								</div>
+						</div>
+						<div class="field column">
+								<label class="label">Email</label>
+									<div class="control has-icons-left has-icons-right">
+										<input id="email-input" class="input" type="email" placeholder="Email">
+									</div>
+							</div>
+					</form>
+					<div class="columns">
+						<div class="field column">
+							<label class="label">Message</label>
+								<div class="control">
+									<textarea class="textarea" placeholder="Write Here"></textarea>
+								</div>
+						</div>
 					</div>
-					<div class="list column contact">
-						<a href="tel:+4915736238561">
-						<ul>
-							<li><img src="img/phone.png"></li>
-							<li>Call Me</li>
-						</ul>
-						</a>
+
+					<div class="columns">
+						<div class="list column">
+							<a href="mailto:jacobwylie@gmail.com">
+							<ul class="contact-item">
+								<li><img src="img/email.png"></li>
+								<li>jacobwylie@gmail.com</li>
+							</ul>
+							</a>
+						</div>
+						<div class="list column contact">
+							<a href="tel:+4915736238561">
+							<ul class="contact-item">
+								<li><img src="img/phone.png"></li>
+								<li>+4915736238561</li>
+							</ul>
+							</a>
+						</div>
 					</div>
 				</div> <!-- /Contact -->
 

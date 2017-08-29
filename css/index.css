@@ -47,6 +47,15 @@ li img {
 	width: 40%;
 }
 
+label.label {
+	color: #ffffff;
+}
+
+textarea.textarea,
+input.input {
+	font-size: .8em;
+}
+
 #particles-js{
     position:absolute;
     top:0;
@@ -54,11 +63,22 @@ li img {
     height:100%;
 }
 
+#email-input {
+	padding: 7px;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(255,255,255,.2);
+    -moz-box-shadow:0px 0px 20px 1px rgba(255,255,255,.2);
+	box-shadow: 0px 0px 20px 1px rgba(126,153,236,.2);
+	border-radius: 10px;
+}
+
 .container-main {
 	position: relative;
 	z-index: 1;
 	margin: 5% auto;
-	width: 330px;
+	width: 380px;
 	text-align: center;
 	cursor: default;
 }
@@ -98,13 +118,18 @@ li img {
 	margin: 50px 0 0 0;
 }
 
-.contact {
+.contact-header {
+	margin: 30px 0;
+}
 
+.contact-item li {
+	font-size: .81em;
 }
 
 .hint {
 	margin: 0 auto;
 	width: 200px;
+
 }
 
 .hint div {
