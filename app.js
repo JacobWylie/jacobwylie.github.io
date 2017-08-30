@@ -6,7 +6,10 @@ const express    = require('express'),
 	  mg         = require('nodemailer-mailgun-transport'),
 	  bodyParser = require('body-parser'),
 	  nconf      = require('nconf'),
-	  auth       = require('./config.json');
+	  auth       = { "auth": {
+        				"api_key": process.env.API_KEY,
+        				"domain": process.env.DOMAIN
+    				}}
 
 // Serve static js and css from /public
 app.use(express.static(__dirname + '/public'));
