@@ -51,16 +51,16 @@ app.post("/", (req, res) => {
 });
 
 // Set which port your app will run on: PORT=<whichever port you like>
-// Connect to server specific port or 3000 if none specified
-// const port = process.env.PORT || 3000
-// app.listen(port, process.env.IP, () => {
-// 	console.log(`App is running on port: ${port}`);
-// })
+// Connect to server specific port or 8080 if none specified
+const port = process.env.PORT || 8080
+app.listen(port, process.env.IP, () => {
+	console.log(`App is running on port: ${port}`);
+})
 
-http.createServer(function (req, res) {
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-}).listen(8080, 'localhost');
-console.log('Server running at http://localhost:8080/');
+// http.createServer(function (req, res) {
+// 	res.writeHead(200, {'Content-Type': 'text/plain'});
+// }).listen(8080, 'localhost');
+// console.log('Server running at http://localhost:8080/');
 
 
 
