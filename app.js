@@ -6,6 +6,7 @@ const express    = require('express'),
 	  mg         = require('nodemailer-mailgun-transport'),
 	  bodyParser = require('body-parser'),
 	  nconf      = require('nconf'),
+	  http       = require('http'),
 	  auth       = { "auth": {
         				"api_key": process.env.API_KEY,
         				"domain": process.env.DOMAIN
@@ -51,10 +52,15 @@ app.post("/", (req, res) => {
 
 // Set which port your app will run on: PORT=<whichever port you like>
 // Connect to server specific port or 3000 if none specified
-const port = process.env.PORT || 3000
-app.listen(port, process.env.IP, () => {
-	console.log(`App is running on port: ${port}`);
-})
+// const port = process.env.PORT || 3000
+// app.listen(port, process.env.IP, () => {
+// 	console.log(`App is running on port: ${port}`);
+// })
+
+http.createServer(function (req, res) {
+	res.writeHead(200, {'Content-Type': 'text/plain'});
+}).listen(8080, 'localhost');
+console.log('Server running at http://localhost:8080/');
 
 
 
