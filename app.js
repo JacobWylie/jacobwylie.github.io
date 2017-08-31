@@ -6,17 +6,18 @@ const express    = require('express'),
 	  mg         = require('nodemailer-mailgun-transport'),
 	  bodyParser = require('body-parser'),
 	  nconf      = require('nconf'),
+	  path       = require('path'),
 	  http       = require('http'),
 	  favicon    = require('serve-favicon'),
 	  auth       = { "auth": {
         				"api_key": process.env.API_KEY,
         				"domain": process.env.DOMAIN
-    				}}
+    				}};
 
 // Serve static js and css from /public
 app.use(express.static(__dirname + '/public'));
 // Favicon
-app.use(favicon(__dirname + '/public/img/favicon.ico'));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 // Body parser
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -38,16 +39,17 @@ app.post("/", (req, res) => {
 		name: name,
 		to: 'jacobwylie@gmail.com', // list of receivers
 		subject: 'Message from Portfolio Contact page', // Subject line
-		text: message,
+		text: message
 	};
 	
 	// send mail with defined transport object
 	transporter.sendMail(mailOptions, (error, info) => {
 		if (error) {
 	  		console.log('\nERROR: ' + error+'\n');
+	  		res.redirect('back');
 	  		
 		} else {
-	    	console.log('\nRESPONSE SENT: ' + info.response+'\n');
+	    	// console.log('\nRESPONSE SENT: ' + info.response+'\n');
 	  		res.redirect('back');
 		}
 	});
