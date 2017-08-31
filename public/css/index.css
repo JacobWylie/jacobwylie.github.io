@@ -76,7 +76,7 @@ input.input {
 	position: relative;
 	z-index: 1;
 	margin: 20px auto;
-	width: 336px;
+	width: 350px;
 	text-align: center;
 	cursor: default;
 }
@@ -115,7 +115,7 @@ input.input {
 }
 
 .contact-item li {
-	font-size: .8em;
+	font-size: .68em;
 }
 
 .submit-div {
