@@ -8,11 +8,12 @@ const express    = require('express'),
 	  nconf      = require('nconf'),
 	  path       = require('path'),
 	  http       = require('http'),
-	  favicon    = require('serve-favicon'),
+	  favicon    = require('serve-favicon');
 	  auth       = { "auth": {
         				"api_key": process.env.API_KEY,
         				"domain": process.env.DOMAIN
-    				}};
+        				}
+        			};
 
 // Serve static js and css from /public
 app.use(express.static(__dirname + '/public'));
@@ -53,7 +54,9 @@ app.post("/", (req, res) => {
 	  		res.redirect('back');
 		}
 	});
+
 });
+
 
 // Set which port your app will run on: PORT=<whichever port you like>
 // Connect to server specific port or 8080 if none specified
