@@ -19,7 +19,6 @@ body {
 h1 {
 	font-size: 3em;
 	margin-bottom: -5px;
-	background-color: rgba(8, 7, 20, 0);
 	opacity: 1;
 	border-radius: 10px;
 	text-decoration: underline;
@@ -28,7 +27,6 @@ h1 {
 h2 {
 	font-size: 1.3em;
 	margin-bottom: 10px;
-	background-color: rgba(8, 7, 20, 0);
 	opacity: 1;
 	border-radius: 10px;
 }
@@ -96,7 +94,6 @@ input.input {
 .list {
 	transition: all 2s ease-in;
 	transition: all 1s ease-out;
-	padding: 10px;
 }
 
 .list:hover {
