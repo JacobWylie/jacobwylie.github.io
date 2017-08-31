@@ -76,7 +76,7 @@ input.input {
 	position: relative;
 	z-index: 1;
 	margin: 20px auto;
-	min-width: 332px;
+	width: 336px;
 	text-align: center;
 	cursor: default;
 }
@@ -124,7 +124,7 @@ input.input {
 
 .hint {
 	margin: 0 auto;
-	min-width: 210px;
+	width: 214px;
 
 }
 

@@ -18,7 +18,7 @@ const express    = require('express'),
 // Serve static js and css from /public
 app.use(express.static(__dirname + '/public'));
 // Favicon
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', '/img/favicon.ico')));
 // Body parser
 app.use(bodyParser.urlencoded({ extended: true }));
 
