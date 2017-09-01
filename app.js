@@ -7,6 +7,7 @@ const express    = require('express'),
 	  bodyParser = require('body-parser'),
 	  nconf      = require('nconf'),
 	  path       = require('path'),
+	  favicon    = require('serve-favicon'),
 	  http       = require('http'),
 	  auth       = { "auth": {
         				"api_key": process.env.API_KEY,
@@ -16,6 +17,8 @@ const express    = require('express'),
 
 // Serve static js and css from /public
 app.use(express.static(__dirname + '/public'));
+// Favicon
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 // Body parser
 app.use(bodyParser.urlencoded({ extended: true }));
 

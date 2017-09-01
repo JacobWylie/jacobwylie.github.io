@@ -26,7 +26,7 @@ h1 {
 
 h2 {
 	font-size: 1.3em;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	opacity: 1;
 	border-radius: 10px;
 }
@@ -106,8 +106,9 @@ input.input {
 }
 
 .nav-button a {
-	opacity: 1;
-	border: ;
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	font-size: 1.05em
 }
 
 .contact-header {
@@ -123,8 +124,8 @@ input.input {
 }
 
 .hint {
-	margin: 0 auto;
-	width: 214px;
+	margin: 30px auto 0 auto;
+	width: 231px;
 
 }
 
@@ -145,6 +146,7 @@ input.input {
   position: relative;
   perspective: 1000px;
   margin-top: 70px;
+  margin-bottom: 300px;
   cursor: default;
 }
 
@@ -169,8 +171,9 @@ input.input {
 }
 
 .carousel-btn {
-	margin: 60% auto 0px auto;
-	max-width: 50px;
+	margin: 40% auto 0px auto;
+	padding: 15px;
+	max-width: 65px;
 	font-size: .7em;
 }
 
@@ -216,14 +219,42 @@ input.input {
 	margin: 0 auto;
 }
 
+.inner a {
+	background-color: 
+}
+
 /* MOBILE DEVICES */
-@media(max-width: 768px) {
+@media(max-width: 500px) {
 	html, body {
 		overflow: scroll;
 	}
 
+	h1 {
+		font-size: 2.4em;
+	}
+
+	h2 {
+		font-size: 1em;
+	}
+
+	.container-main {
+		transform: scale(1);
+		width: 280px;
+	}
+
+	.nav-button a {
+		margin: 10px auto 0 auto;
+		padding: 5px;
+		display: block;
+		width: 150px;
+	}
+
 	.hint {
-		display: none;
+		display: block;
+	}
+
+	.contact-item li {
+		font-size: .52em;
 	}
 
 	.container-carousel {
