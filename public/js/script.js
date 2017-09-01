@@ -30,16 +30,40 @@ function rotateLeft() {
 
 // Portfolio Descriptions Change for Each Slide
 function changeSlide() {
-    if (currdeg == 0 ) {
+    if (portfolioSite.classList.contains('is-hidden')) {
+        portfolioSite.classList.remove('is-hidden');
+    }
+    if (currdeg == 0 || currdeg == 360 || currdeg == -360) {
         portfolioHead.textContent = "Campground Reviews";
         portfolioText.textContent = "A social media platform for users to share and review campsites from around the world.";
         portfolioSite.setAttribute('href', "https://jacobwylie.com/camp");
         portfolioCode.setAttribute('href', "https://github.com/JacobWylie/yelpcamp");
-    } else if(currdeg == -60) {
+    } else if(currdeg == -60 || currdeg == 300) {
         portfolioHead.textContent = "Berlin: Black + White";
         portfolioText.textContent = "A site that returns black and white images from Flickr's API based on user's keywords.";
         portfolioSite.setAttribute('href', "https://jacobwylie.github.io/flickr-api/");
         portfolioCode.setAttribute('href', "https://github.com/JacobWylie/flickr-api");
+    } else if(currdeg == -120 || currdeg == 240) {
+        portfolioHead.textContent = "The Sunbug Boogie";
+        portfolioText.textContent = "A whimsical site to preview and promote the release of a children's book. ";
+        portfolioSite.setAttribute('href', "https://thesunbugboogie.github.io/");
+        portfolioCode.setAttribute('href', "https://github.com/JacobWylie/sunbugboogie");
+    } else if(currdeg == -180 || currdeg == 180) {
+        portfolioHead.textContent = "RESTful Blog";
+        portfolioText.textContent = "A blogging platform built on NodeJS and MongoDB to practice RESTful routing.";
+        portfolioSite.setAttribute('href', "https://jacobwylie.com/blog");
+        portfolioCode.setAttribute('href', "https://github.com/JacobWylie/RESTful-Blog");
+    } else if(currdeg == -240 || currdeg == 120) {
+        portfolioHead.textContent = "Movie Search";
+        portfolioText.textContent = "Allows users to find movies using IMDB's API and link to their respective page.";
+        portfolioSite.setAttribute('href', "https://jacobwylie.com/blog");
+        portfolioCode.setAttribute('href', "https://github.com/JacobWylie/MovieApiApp");
+    } else if(currdeg == -300 || currdeg == 60) {
+        portfolioHead.textContent = "Twitter Bot";
+        portfolioText.textContent = "A bot that finds web development related tweets in Germany and reposts them to my account";
+        portfolioSite.classList.add('is-hidden')
+        portfolioCode.setAttribute('href', "https://github.com/JacobWylie/twitter-bot");
+        portfolioCode.style.marginLeft = '0'
     } 
 }
 

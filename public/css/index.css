@@ -1,19 +1,19 @@
 /* Disable verticle scroll */
-html, body {
-	overflow: hidden;
-	height: 100vh;
-	font-family: 'Audiowide', cursive;
-	letter-spacing: .1em;
-}
-
-body {
-	background: url(../img/bg.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
+html {
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: 0;
+    background-color: #0c0c1e;
     cursor: url('../img/rocket.png'), default;
+}
+
+html, body {
+	overflow: initial;
+	font-family: 'Audiowide', cursive;
+	letter-spacing: .1em;
+	margin: 0;
 }
 
 h1 {
@@ -173,7 +173,17 @@ input.input {
 	margin: 0px auto 0px auto;
 	padding: 15px;
 	max-width: 65px;
-	font-size: .7em;
+	font-size: .9em;
+	color: white;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.portfolio-site {
+	margin-right: 10px;
+}
+
+.portfolio-code {
+	margin-left: 10px;
 }
 
 .a {
@@ -201,22 +211,22 @@ input.input {
 
 .c {
   transform: rotateY(120deg) translateZ(250px);
-  background: url(../img/1.png);
+  background: url(../img/sunbug.png);
 }
 
 .d {
   transform: rotateY(180deg) translateZ(250px);
-  background: url(../img/1.png);
+  background: url(../img/blog.png);
 }
 
 .e {
   transform: rotateY(240deg) translateZ(250px);
-  background: url(../img/1.png);
+  background: url(../img/movie.png);
 } 
 
 .f {
   transform: rotateY(300deg) translateZ(250px);
-  background: url(../img/1.png);
+  background: url(../img/twitbot.png);
 }
 
 .arrows {
@@ -258,10 +268,6 @@ input.input {
 		padding: 5px;
 		display: block;
 		width: 150px;
-	}
-
-	.hint {
-		display: block;
 	}
 
 	.contact-item li {
