@@ -17,18 +17,18 @@ function rotateRight() {
     currdeg = currdeg - 60;
     slide = slide + 1;
     carousel.setAttribute('style', `-webkit-transform: rotateY(${currdeg}deg); 
-                               -moz-transform: rotateY(${currdeg}deg);
-                               -o-transform: rotateY(${currdeg}deg);
-                               transform": rotateY(${currdeg}deg)`);
+                                    -moz-transform: rotateY(${currdeg}deg);
+                                    -o-transform: rotateY(${currdeg}deg);
+                                     transform": rotateY(${currdeg}deg);`);
 }
 
 function rotateLeft() {
     slide = slide - 1;
     currdeg = currdeg + 60;
     carousel.setAttribute('style', `-webkit-transform: rotateY(${currdeg}deg); 
-                               -moz-transform: rotateY(${currdeg}deg);
-                               -o-transform: rotateY(${currdeg}deg);
-                               transform": rotateY(${currdeg}deg)`);
+                                    -moz-transform: rotateY(${currdeg}deg);
+                                    -o-transform: rotateY(${currdeg}deg);
+                                     transform": rotateY(${currdeg}deg);`);
 }
 
 // Portfolio Descriptions Change for Each Slide
@@ -81,14 +81,14 @@ prev.addEventListener('click', function(e) {
 });
 
 // Show/Hide Divs on page
-const onlineBtn = document.querySelector('.online-btn');
-const portfolioBtn = document.querySelector('.portfolio-btn');
-const contactBtn = document.querySelector('.contact-btn');
-const onlineDiv = document.querySelector('.online');
-const portfolioDiv = document.querySelector('.container-carousel');
-const arrows = document.querySelector('.arrows')
-const contactDiv = document.querySelector('.contact');
-const hintDiv = document.querySelector('.hint');
+const onlineBtn    = document.querySelector('.online-btn'),
+      portfolioBtn = document.querySelector('.portfolio-btn'),
+      contactBtn   = document.querySelector('.contact-btn'),
+      onlineDiv    = document.querySelector('.online'),
+      portfolioDiv = document.querySelector('.container-carousel'),
+      arrows       = document.querySelector('.arrows'),
+      contactDiv   = document.querySelector('.contact'),
+      hintDiv      = document.querySelector('.hint');
 
 function showOnline() {
     if (onlineDiv.classList.contains('is-hidden')) {
