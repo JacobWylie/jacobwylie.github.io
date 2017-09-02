@@ -71,11 +71,13 @@ function changeSlide() {
     } 
 }
 
-next.addEventListener('click', function(e) {
+next.addEventListener('click', e => {
+    e.preventDefault();
     rotateRight(); 
     changeSlide();
 });
-prev.addEventListener('click', function(e) {
+prev.addEventListener('click', e => {
+    e.preventDefault();
     rotateLeft(); 
     changeSlide();
 });
@@ -138,9 +140,18 @@ function showContact() {
     }
 }
 
-onlineBtn.addEventListener('click', showOnline);
-portfolioBtn.addEventListener('click', showPortfolio);
-contactBtn.addEventListener('click', showContact);
+onlineBtn.addEventListener('click', e => {
+    e.preventDefault();
+    showOnline();
+});
+portfolioBtn.addEventListener('click', e => {
+    e.preventDefault();
+    showPortfolio();
+});
+contactBtn.addEventListener('click', e => {
+    e.preventDefault();
+    showContact()
+});
 
 
 

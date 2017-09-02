@@ -30,6 +30,31 @@ h2 {
 	border-radius: 10px;
 }
 
+a {
+	border-color: #dadada;
+	color: #fefefe;
+	transition: all .3s ease-in;
+	transition: all .3s ease-out;
+}
+
+a.carousel-btn[target="_blank"] {
+	border-color: #dadada;
+	color: #fefefe;
+	outline: none;
+}
+
+a.carousel-btn:active {
+	border-color: #dadada;
+	color: #fefefe;
+	outline: none;
+}
+
+a.carousel-btn:hover {
+	color: #363636;
+	border-color: #b5b5b5;
+	outline: none;
+}
+
 ul.column {
 	margin-top: 5px;
 }
@@ -242,6 +267,11 @@ input.input {
 
 .inner a {
 	background-color: 
+}
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(255, 255, 255, .6);
 }
 
 /* MOBILE DEVICES */
