@@ -60,7 +60,7 @@ function changeSlide() {
     } else if(slide == 4 || slide == -2) {
         portfolioHead.textContent = "Movie Search";
         portfolioText.textContent = "Allows users to find movies using IMDB's API and link to their respective page.";
-        portfolioSite.setAttribute('href', "https://jacobwylie.com/blog");
+        portfolioSite.setAttribute('href', "https://jacobwylie.com/movie");
         portfolioCode.setAttribute('href', "https://github.com/JacobWylie/MovieApiApp");
     } else if(slide == 5 || slide == -1) {
         portfolioHead.textContent = "Twitter Bot";
@@ -150,9 +150,7 @@ portfolioBtn.addEventListener('click', e => {
 });
 contactBtn.addEventListener('click', e => {
     e.preventDefault();
-    showContact()
 });
-
 
 
 
