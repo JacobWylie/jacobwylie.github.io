@@ -150,6 +150,7 @@ portfolioBtn.addEventListener('click', e => {
 });
 contactBtn.addEventListener('click', e => {
     e.preventDefault();
+    showContact();
 });
 
 
