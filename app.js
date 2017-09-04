@@ -57,6 +57,8 @@ app.post("/", (req, res) => {
 
 });
 
+// ROOT Route
+app.get('*', (req, res) => res.redirect('back'));
 
 // Set which port your app will run on: PORT=<whichever port you like>
 // Connect to server specific port or 8080 if none specified
