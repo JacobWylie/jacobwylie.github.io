@@ -37,6 +37,7 @@ a {
 	transition: all .3s ease-out;
 }
 
+
 a.carousel-btn[target="_blank"] {
 	border-color: #dadada;
 	color: #fefefe;
@@ -284,6 +285,16 @@ input.input {
 	background-color: rgba(255, 255, 255, .6);
 }
 
+.prev:active,
+.next:active,
+.prev:focus,
+.next:focus,
+.next:visited,
+.prev:visited {
+	border: none;
+	opacity: 1
+}
+
 /* MOBILE DEVICES */
 @media(max-width: 500px) {
 	h1 {
@@ -317,6 +328,14 @@ input.input {
 
 	.arrows {
 		margin-top: 0px;
+	}
+
+}
+
+@media(max-width: 400px) {
+	.arrows,
+	.inner {
+		width: 300px;
 	}
 
 }
