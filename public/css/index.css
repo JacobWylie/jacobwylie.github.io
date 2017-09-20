@@ -212,11 +212,6 @@ input.input {
 	margin-left: 10px;
 }
 
-.a {
-  transform: rotateY(0deg) translateZ(250px);
-  background: url(../img/camp.png);
-}
-
 .portfolio-head {
 	color: white;
 	background-color: rgba(255, 255, 255, .);
@@ -227,6 +222,11 @@ input.input {
 	font-size: .8em;
 	color: white;
 	margin-bottom: 15px;
+}
+
+.a {
+  transform: rotateY(0deg) translateZ(250px);
+  background: url(../img/camp.png);
 }
 
 .b {
@@ -247,7 +247,7 @@ input.input {
 
 .e {
   transform: rotateY(240deg) translateZ(250px);
-  background: url(../img/movie.png);
+  background: url(../img/weather.png);
 } 
 
 .f {

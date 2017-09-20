@@ -58,10 +58,10 @@ function changeSlide() {
         portfolioSite.setAttribute('href', "https://jacobwylie.com/blog");
         portfolioCode.setAttribute('href', "https://github.com/JacobWylie/RESTful-Blog");
     } else if(slide == 4 || slide == -2) {
-        portfolioHead.textContent = "Movie Search";
-        portfolioText.textContent = "Allows users to find movies using IMDB's API and link to their respective page.";
-        portfolioSite.setAttribute('href', "https://jacobwylie.com/movie");
-        portfolioCode.setAttribute('href', "https://github.com/JacobWylie/MovieApiApp");
+        portfolioHead.textContent = "React Weather App";
+        portfolioText.textContent = "Users can compare 5-day weather forecasts for all of their favorite cities.";
+        portfolioSite.setAttribute('href', "https://jacobwylie.github.io/react-weather-app/");
+        portfolioCode.setAttribute('href', "https://github.com/JacobWylie/react-weather-app/");
     } else if(slide == 5 || slide == -1) {
         portfolioHead.textContent = "Twitter Bot";
         portfolioText.textContent = "A bot that finds web development related tweets in Germany and reposts them to my account";
