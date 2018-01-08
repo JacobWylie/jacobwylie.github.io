@@ -43,31 +43,30 @@ function changeSlide() {
         portfolioCode.setAttribute('href', "https://github.com/JacobWylie/yelpcamp");
         slide = 0;
     } else if(slide == 1 || slide == -5) {
+        portfolioHead.textContent = "Trending on Github";
+        portfolioText.textContent = "Users can view and archive the newest trending repositories on GitHub.";
+        portfolioSite.setAttribute('href', "https://jacobwylie.github.io/verkstedt-challenge/");
+        portfolioCode.setAttribute('href', "https://github.com/JacobWylie/verkstedt-challenge");
+    } else if(slide == 2 || slide == -4) {
+        portfolioHead.textContent = "React SignUp Form";
+        portfolioText.textContent = "A user signup form built with React and Node backend.";
+        portfolioSite.setAttribute('href', "https://jacobwylie.github.io/SPO-form/");
+        portfolioCode.setAttribute('href', "https://github.com/JacobWylie/SPO-form");
+    } else if(slide == 3 || slide == -3) {
         portfolioHead.textContent = "Berlin: Black + White";
         portfolioText.textContent = "A site that returns black and white images from Flickr's API based on user's keywords.";
         portfolioSite.setAttribute('href', "https://jacobwylie.github.io/flickr-api/");
         portfolioCode.setAttribute('href', "https://github.com/JacobWylie/flickr-api");
-    } else if(slide == 2 || slide == -4) {
-        portfolioHead.textContent = "The Sunbug Boogie";
-        portfolioText.textContent = "A whimsical site to preview and promote the release of a children's book. ";
-        portfolioSite.setAttribute('href', "https://thesunbugboogie.github.io/");
-        portfolioCode.setAttribute('href', "https://github.com/JacobWylie/sunbugboogie");
-    } else if(slide == 3 || slide == -3) {
-        portfolioHead.textContent = "RESTful Blog";
-        portfolioText.textContent = "A blogging platform built on NodeJS and MongoDB to practice RESTful routing.";
-        portfolioSite.setAttribute('href', "https://jacobwylie.com/blog");
-        portfolioCode.setAttribute('href', "https://github.com/JacobWylie/RESTful-Blog");
     } else if(slide == 4 || slide == -2) {
         portfolioHead.textContent = "React Weather App";
         portfolioText.textContent = "Users can compare 5-day weather forecasts for all of their favorite cities.";
         portfolioSite.setAttribute('href', "https://jacobwylie.github.io/react-weather-app/");
         portfolioCode.setAttribute('href', "https://github.com/JacobWylie/react-weather-app/");
     } else if(slide == 5 || slide == -1) {
-        portfolioHead.textContent = "Twitter Bot";
-        portfolioText.textContent = "A bot that finds web development related tweets in Germany and reposts them to my account";
-        portfolioCode.setAttribute('href', "https://github.com/JacobWylie/twitter-bot");
-        portfolioSite.classList.add('is-hidden');
-        portfolioCode.style.marginLeft = '0';
+        portfolioHead.textContent = "The Sunbug Boogie";
+        portfolioText.textContent = "A whimsical site to preview and promote the release of a children's book. ";
+        portfolioSite.setAttribute('href', "https://thesunbugboogie.github.io/");
+        portfolioCode.setAttribute('href', "https://github.com/JacobWylie/sunbugboogie");
     } 
 }
 

@@ -231,18 +231,18 @@ input.input {
 
 .b {
   transform: rotateY(60deg) translateZ(250px);
-  background: url(../img/berlin.png);
+  background: url(../img/trending.png);
 
 }
 
 .c {
   transform: rotateY(120deg) translateZ(250px);
-  background: url(../img/sunbug.png);
+  background: url(../img/form.png);
 }
 
 .d {
   transform: rotateY(180deg) translateZ(250px);
-  background: url(../img/blog.png);
+  background: url(../img/berlin.png;
 }
 
 .e {
@@ -252,7 +252,7 @@ input.input {
 
 .f {
   transform: rotateY(300deg) translateZ(250px);
-  background: url(../img/twitbot.png);
+  background: url(../img/sunbug.png);
 }
 
 .arrows {
