@@ -242,7 +242,7 @@ input.input {
 
 .d {
   transform: rotateY(180deg) translateZ(250px);
-  background: url(../img/berlin.png;
+  background: url(../img/berlin.png);
 }
 
 .e {

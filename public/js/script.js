@@ -49,7 +49,7 @@ function changeSlide() {
         portfolioCode.setAttribute('href', "https://github.com/JacobWylie/verkstedt-challenge");
     } else if(slide == 2 || slide == -4) {
         portfolioHead.textContent = "React SignUp Form";
-        portfolioText.textContent = "A user signup form built with React and Node backend.";
+        portfolioText.textContent = "A user signup form built with React. Routing and API built with Node.js";
         portfolioSite.setAttribute('href', "https://jacobwylie.github.io/SPO-form/");
         portfolioCode.setAttribute('href', "https://github.com/JacobWylie/SPO-form");
     } else if(slide == 3 || slide == -3) {
