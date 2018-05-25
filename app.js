@@ -63,7 +63,7 @@ app.get('*', (req, res) => res.redirect('back'));
 
 // Set which port your app will run on: PORT=<whichever port you like>
 // Connect to server specific port or 8080 if none specified
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8080;
 app.listen(port, process.env.IP, () => {
 	console.log(`App is running on port: ${port}`);
 })
