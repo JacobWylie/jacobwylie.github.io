@@ -9,12 +9,16 @@ const express    = require('express'),
 	  path       = require('path'),
 	  favicon    = require('serve-favicon'),
 	  http       = require('http'),
+	  dotENV     = require('dotenv').load(),
 	  auth       = { "auth": {
         				"api_key": process.env.API_KEY,
         				"domain": process.env.DOMAIN
         				}
         			};
 
+
+console.log(process.env.API_KEY)
+console.log(auth.auth)
 // Serve static js and css from /public
 app.use(express.static(__dirname + '/public'));
 // Favicon
