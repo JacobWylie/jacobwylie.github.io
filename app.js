@@ -15,10 +15,7 @@ const express    = require('express'),
         				"domain": process.env.DOMAIN
         				}
         			};
-
-
-console.log(process.env.API_KEY)
-console.log(auth.auth)
+        			
 // Serve static js and css from /public
 app.use(express.static(__dirname + '/public'));
 // Favicon
