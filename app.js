@@ -58,6 +58,38 @@ app.post("/", (req, res) => {
 
 });
 
+// http POST /contact
+app.post("/julia", (req, res) => {
+	let name = req.body.name;
+	let email = req.body.email;
+	let message = req.body.message;
+
+	// create transporter object capable of sending email using the default SMTP transport
+	const transporter = nodemailer.createTransport(mg(auth));
+
+	// setup e-mail data with unicode symbols
+	let mailOptions = {
+		from: email, // sender address
+		name: name,
+		to: 'jstarkov8@gmail.com', // list of receivers
+		subject: 'Message from Portfolio Contact page', // Subject line
+		text: message
+	};
+	
+	// send mail with defined transport object
+	transporter.sendMail(mailOptions, (error, info) => {
+		if (error) {
+	  		console.log('\nERROR: ' + error+'\n');
+	  		res.redirect('back');
+	  		
+		} else {
+	    	// console.log('\nRESPONSE SENT: ' + info.response+'\n');
+	  		res.redirect('back');
+		}
+	});
+
+});
+
 // ROOT Route
 app.get('*', (req, res) => res.redirect('back'));
 
